@@ -1,3 +1,7 @@
+//	Asencio Morales Miguel Angel
+//  Práctica 3. Proyecciones y transformaciones
+//  319211454
+//  05/09/2026
 #include<iostream>
 
 //#define GLEW_STATIC
@@ -275,15 +279,23 @@ int main() {
 		glBindVertexArray(VAO);
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(2.0f, 9.0f, 1.0f));
-		model = glm::rotate(model, 45.0f, glm::vec3(1.0f, 0.0f, 1.0f)); // use to compare orthographic and perspective projection
-		model = glm::scale(model, glm::vec3(6.0f, 2.0f, -12.0f));
+		model = glm::translate(model, glm::vec3(2.0f, 9.0f, -12.0f));
+		model = glm::rotate(model, 45.0f, glm::vec3(-15.0f, -10.0f, -3.0f)); // use to compare orthographic and perspective projection
+		model = glm::scale(model, glm::vec3(3.0f, 1.0f, 3.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 		glBindVertexArray(0);
 
 
-
+		glBindVertexArray(VAO);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(-1.0f, 11.0f, -12.0f));
+		model = glm::rotate(model, 45.0f, glm::vec3(6.0f, -12.0f, -12.0f)); // use to compare orthographic and perspective projection
+		model = glm::scale(model, glm::vec3(3.0f, 1.0f, 3.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		glBindVertexArray(0);
 		
 		
 		
