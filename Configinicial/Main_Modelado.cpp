@@ -202,6 +202,8 @@ int main() {
 
 		glBindVertexArray(VAO);
 
+		//Z=0
+
 		//y=6
 	
 	    model = glm::mat4(1.0f);
@@ -219,31 +221,31 @@ int main() {
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 3
-		model = glm::translate(model, glm::vec3(2.0f, 0.5f, 0.0f));//Posición y=6 de cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 0.5f, 0.0f));//Posición y=6 de cuadro 3
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 4
-		model = glm::translate(model, glm::vec3(2.5f, 0.5f, 0.0f));//Posición y=6 de cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 0.5f, 0.0f));//Posición y=6 de cuadro 4
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 5
-		model = glm::translate(model, glm::vec3(3.0f, 0.5f, 0.0f));//Posición y=6 de cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 0.5f, 0.0f));//Posición y=6 de cuadro 5
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 6
-		model = glm::translate(model, glm::vec3(3.5f, 0.5f, 0.0f));//Posición y=6 de cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 0.5f, 0.0f));//Posición y=6 de cuadro 6
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 7
-		model = glm::translate(model, glm::vec3(4.0f, 0.5f, 0.0f));//Posición y=6 de cuadro 7
+		model = glm::translate(model, glm::vec3(6.5f, 0.5f, 0.0f));//Posición y=6 de cuadro 7
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
@@ -251,44 +253,44 @@ int main() {
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 1
-		model = glm::translate(model, glm::vec3(1.0f, 1.5f, 0.0f));//Posición y=7 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, 1.5f, 0.0f));//Posición y=7 cuadro 1
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 		//glBindVertexArray(0);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 2
-		model = glm::translate(model, glm::vec3(0.5f, 1.5f, 0.0f));//Posición y=7 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 1.5f, 0.0f));//Posición y=7 cuadro 2
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 3
-		model = glm::translate(model, glm::vec3(1.5f, 1.5f, 0.0f));//Posición y=7 de cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 1.5f, 0.0f));//Posición y=7 de cuadro 3
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 4
-		model = glm::translate(model, glm::vec3(2.0f, 1.5f, 0.0f));//Posición y=7 de cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 1.5f, 0.0f));//Posición y=7 de cuadro 4
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 5
-		model = glm::translate(model, glm::vec3(2.5f, 1.5f, 0.0f));//Posición y=7 de cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 1.5f, 0.0f));//Posición y=7 de cuadro 5
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 6
-		model = glm::translate(model, glm::vec3(3.0f, 1.5f, 0.0f));//Posición y=7 de cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 1.5f, 0.0f));//Posición y=7 de cuadro 6
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 7
-		model = glm::translate(model, glm::vec3(3.5f, 1.5f, 0.0f));//Posición y=7 de cuadro 7
+		model = glm::translate(model, glm::vec3(6.5f, 1.5f, 0.0f));//Posición y=7 de cuadro 7
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
@@ -296,44 +298,44 @@ int main() {
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 1
-		model = glm::translate(model, glm::vec3(1.0f, 2.5f, 0.0f));//Posición y=8 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, 2.5f, 0.0f));//Posición y=8 cuadro 1
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 		//glBindVertexArray(0);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 2
-		model = glm::translate(model, glm::vec3(0.5f, 2.5f, 0.0f));//Posición y=8 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 2.5f, 0.0f));//Posición y=8 cuadro 2
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 3
-		model = glm::translate(model, glm::vec3(1.5f, 2.5f, 0.0f));//Posición y=8 de cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 2.5f, 0.0f));//Posición y=8 de cuadro 3
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 4
-		model = glm::translate(model, glm::vec3(2.0f, 2.5f, 0.0f));//Posición y=8 de cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 2.5f, 0.0f));//Posición y=8 de cuadro 4
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 5
-		model = glm::translate(model, glm::vec3(2.5f, 2.5f, 0.0f));//Posición y=8 de cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 2.5f, 0.0f));//Posición y=8 de cuadro 5
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 6
-		model = glm::translate(model, glm::vec3(3.0f, 2.5f, 0.0f));//Posición y=8 de cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 2.5f, 0.0f));//Posición y=8 de cuadro 6
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 7
-		model = glm::translate(model, glm::vec3(3.5f, 2.5f, 0.0f));//Posición y=8 de cuadro 7
+		model = glm::translate(model, glm::vec3(6.5f, 2.5f, 0.0f));//Posición y=8 de cuadro 7
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
@@ -341,67 +343,3014 @@ int main() {
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 1
-		model = glm::translate(model, glm::vec3(1.0f, 3.5f, 0.0f));//Posición y=9 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, 3.5f, 0.0f));//Posición y=9 cuadro 1
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 		//glBindVertexArray(0);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 2
-		model = glm::translate(model, glm::vec3(0.5f, 3.5f, 0.0f));//Posición y=9 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 3.5f, 0.0f));//Posición y=9 cuadro 2
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 3
-		model = glm::translate(model, glm::vec3(1.5f, 3.5f, 0.0f));//Posición y=9 de cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 3.5f, 0.0f));//Posición y=9 de cuadro 3
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 4
-		model = glm::translate(model, glm::vec3(2.0f, 3.5f, 0.0f));//Posición y=9 de cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 3.5f, 0.0f));//Posición y=9 de cuadro 4
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 5
-		model = glm::translate(model, glm::vec3(2.5f, 3.5f, 0.0f));//Posición y=9 de cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 3.5f, 0.0f));//Posición y=9 de cuadro 5
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 6
-		model = glm::translate(model, glm::vec3(3.0f, 3.5f, 0.0f));//Posición y=9 de cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 3.5f, 0.0f));//Posición y=9 de cuadro 6
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=10
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 4.5f, 0.0f));//Posición y=10 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 4.5f, 0.0f));//Posición y=10 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 4.5f, 0.0f));//Posición y=10 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=5
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -0.5f, 0.0f));//Posición y=5 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -0.5f, 0.0f));//Posición y=5 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -0.5f, 0.0f));//Posición y=5 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -0.5f, 0.0f));//Posición y=5 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, -0.5f, 0.0f));//Posición y=5 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, -0.5f, 0.0f));//Posición y=5 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=4
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -1.5f, 0.0f));//Posición y=4 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -1.5f, 0.0f));//Posición y=4 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -1.5f, 0.0f));//Posición y=4 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -1.5f, 0.0f));//Posición y=4 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, -1.5f, 0.0f));//Posición y=4 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, -1.5f, 0.0f));//Posición y=4 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=3
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -2.5f, 0.0f));//Posición y=3 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -2.5f, 0.0f));//Posición y=3 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -2.5f, 0.0f));//Posición y=3 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -2.5f, 0.0f));//Posición y=3 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, -2.5f, 0.0f));//Posición y=3 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=2
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -3.5f, 0.0f));//Posición y=2 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -3.5f, 0.0f));//Posición y=2 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -3.5f, 0.0f));//Posición y=2 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -3.5f, 0.0f));//Posición y=2 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=1
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -4.5f, 0.0f));//Posición y=1 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -4.5f, 0.0f));//Posición y=1 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//Z=1
+
+		//y=6
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//cambio de escala del cubo (modificación) Ancho, grosor, profundidad
+		model = glm::translate(model, glm::vec3(0.5f, 0.5f, 1.0f));//cambio de posición del cubo (modificación) Izquierda/Derecha, Arriba/Abajo, Adelante/Atrás
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 0.5f, 1.0f));//Posición y=6 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 0.5f, 1.0f));//Posición y=6 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 0.5f, 1.0f));//Posición y=6 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 0.5f, 1.0f));//Posición y=6 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 0.5f, 1.0f));//Posición y=6 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 7
+		model = glm::translate(model, glm::vec3(6.5f, 0.5f, 1.0f));//Posición y=6 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=7
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, 1.5f, 1.0f));//Posición y=7 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 1.5f, 1.0f));//Posición y=7 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 1.5f, 1.0f));//Posición y=7 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 1.5f, 1.0f));//Posición y=7 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 1.5f, 1.0f));//Posición y=7 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 1.5f, 1.0f));//Posición y=7 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 7
+		model = glm::translate(model, glm::vec3(6.5f, 1.5f, 1.0f));//Posición y=7 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=8
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, 2.5f, 1.0f));//Posición y=8 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 2.5f, 1.0f));//Posición y=8 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 2.5f, 1.0f));//Posición y=8 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 2.5f, 1.0f));//Posición y=8 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 2.5f, 1.0f));//Posición y=8 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 2.5f, 1.0f));//Posición y=8 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 7
+		model = glm::translate(model, glm::vec3(6.5f, 2.5f, 1.0f));//Posición y=8 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=9
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, 3.5f, 1.0f));//Posición y=9 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 3.5f, 1.0f));//Posición y=9 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 3.5f, 1.0f));//Posición y=9 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 3.5f, 1.0f));//Posición y=9 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 3.5f, 1.0f));//Posición y=9 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 3.5f, 1.0f));//Posición y=9 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=10
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 4.5f, 1.0f));//Posición y=10 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 4.5f, 1.0f));//Posición y=10 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 4.5f, 1.0f));//Posición y=10 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=5
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -0.5f, 1.0f));//Posición y=5 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -0.5f, 1.0f));//Posición y=5 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -0.5f, 1.0f));//Posición y=5 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -0.5f, 1.0f));//Posición y=5 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, -0.5f, 1.0f));//Posición y=5 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, -0.5f, 1.0f));//Posición y=5 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=4
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -1.5f, 1.0f));//Posición y=4 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -1.5f, 1.0f));//Posición y=4 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -1.5f, 1.0f));//Posición y=4 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -1.5f, 1.0f));//Posición y=4 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, -1.5f, 1.0f));//Posición y=4 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, -1.5f, 1.0f));//Posición y=4 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=3
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -2.5f, 1.0f));//Posición y=3 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -2.5f, 1.0f));//Posición y=3 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -2.5f, 1.0f));//Posición y=3 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -2.5f, 1.0f));//Posición y=3 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, -2.5f, 1.0f));//Posición y=3 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=2
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -3.5f, 1.0f));//Posición y=2 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -3.5f, 1.0f));//Posición y=2 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -3.5f, 1.0f));//Posición y=2 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -3.5f, 1.0f));//Posición y=2 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=1
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -4.5f, 1.0f));//Posición y=1 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -4.5f, 1.0f));//Posición y=1 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//Z=0
+
+		//y=6
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//cambio de escala del cubo (modificación) Ancho, grosor, profundidad
+		model = glm::translate(model, glm::vec3(0.5f, 0.5f, -1.0f));//cambio de posición del cubo (modificación) Izquierda/Derecha, Arriba/Abajo, Adelante/Atrás
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 0.5f, -1.0f));//Posición y=6 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 0.5f, -1.0f));//Posición y=6 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 0.5f, -1.0f));//Posición y=6 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 0.5f, -1.0f));//Posición y=6 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 0.5f, -1.0f));//Posición y=6 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 7
+		model = glm::translate(model, glm::vec3(6.5f, 0.5f, -1.0f));//Posición y=6 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=7
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, 1.5f, -1.0f));//Posición y=7 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 1.5f, -1.0f));//Posición y=7 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 1.5f, -1.0f));//Posición y=7 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 1.5f, -1.0f));//Posición y=7 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 1.5f, -1.0f));//Posición y=7 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 1.5f, -1.0f));//Posición y=7 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 7
+		model = glm::translate(model, glm::vec3(6.5f, 1.5f, -1.0f));//Posición y=7 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=8
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, 2.5f, -1.0f));//Posición y=8 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 2.5f, -1.0f));//Posición y=8 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 2.5f, -1.0f));//Posición y=8 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 2.5f, -1.0f));//Posición y=8 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 2.5f, -1.0f));//Posición y=8 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 2.5f, -1.0f));//Posición y=8 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 7
+		model = glm::translate(model, glm::vec3(6.5f, 2.5f, -1.0f));//Posición y=8 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=9
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, 3.5f, -1.0f));//Posición y=9 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 3.5f, -1.0f));//Posición y=9 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 3.5f, -1.0f));//Posición y=9 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 3.5f, -1.0f));//Posición y=9 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 3.5f, -1.0f));//Posición y=9 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 3.5f, -1.0f));//Posición y=9 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=10
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 4.5f, -1.0f));//Posición y=10 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 4.5f, -1.0f));//Posición y=10 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 4.5f, -1.0f));//Posición y=10 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=5
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -0.5f, -1.0f));//Posición y=5 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -0.5f, -1.0f));//Posición y=5 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -0.5f, -1.0f));//Posición y=5 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -0.5f, -1.0f));//Posición y=5 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, -0.5f, -1.0f));//Posición y=5 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, -0.5f, -1.0f));//Posición y=5 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=4
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -1.5f, -1.0f));//Posición y=4 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -1.5f, -1.0f));//Posición y=4 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -1.5f, -1.0f));//Posición y=4 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -1.5f, -1.0f));//Posición y=4 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, -1.5f, -1.0f));//Posición y=4 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, -1.5f, -1.0f));//Posición y=4 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=3
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -2.5f, -1.0f));//Posición y=3 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -2.5f, -1.0f));//Posición y=3 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -2.5f, -1.0f));//Posición y=3 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -2.5f, -1.0f));//Posición y=3 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, -2.5f, -1.0f));//Posición y=3 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=2
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -3.5f, -1.0f));//Posición y=2 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -3.5f, -1.0f));//Posición y=2 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -3.5f, -1.0f));//Posición y=2 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -3.5f, -1.0f));//Posición y=2 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=1
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -4.5f, -1.0f));//Posición y=1 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -4.5f, -1.0f));//Posición y=1 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//Z=2
+
+		//y=6
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//cambio de escala del cubo (modificación) Ancho, grosor, profundidad
+		model = glm::translate(model, glm::vec3(0.5f, 0.5f, 2.0f));//cambio de posición del cubo (modificación) Izquierda/Derecha, Arriba/Abajo, Adelante/Atrás
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 0.5f, 2.0f));//Posición y=6 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 0.5f, 2.0f));//Posición y=6 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 0.5f, 2.0f));//Posición y=6 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 0.5f, 2.0f));//Posición y=6 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 0.5f, 2.0f));//Posición y=6 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=7
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, 1.5f, 2.0f));//Posición y=7 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 1.5f, 2.0f));//Posición y=7 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 1.5f, 2.0f));//Posición y=7 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 1.5f, 2.0f));//Posición y=7 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 1.5f, 2.0f));//Posición y=7 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 1.5f, 2.0f));//Posición y=7 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=8
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, 2.5f, 2.0f));//Posición y=8 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 2.5f, 2.0f));//Posición y=8 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 2.5f, 2.0f));//Posición y=8 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 2.5f, 2.0f));//Posición y=8 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 2.5f, 2.0f));//Posición y=8 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 2.5f, 2.0f));//Posición y=8 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=9
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 3.5f, 2.0f));//Posición y=9 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 3.5f, 2.0f));//Posición y=9 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 3.5f, 2.0f));//Posición y=9 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=5
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -0.5f, 2.0f));//Posición y=5 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -0.5f, 2.0f));//Posición y=5 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -0.5f, 2.0f));//Posición y=5 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -0.5f, 2.0f));//Posición y=5 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, -0.5f, 2.0f));//Posición y=5 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=4
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -1.5f, 2.0f));//Posición y=4 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -1.5f, 2.0f));//Posición y=4 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -1.5f, 2.0f));//Posición y=4 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -1.5f, 2.0f));//Posición y=4 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, -1.5f, 2.0f));//Posición y=4 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=3
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -2.5f, 2.0f));//Posición y=3 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -2.5f, 2.0f));//Posición y=3 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -2.5f, 2.0f));//Posición y=3 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -2.5f, 2.0f));//Posición y=3 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=2
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -3.5f, 2.0f));//Posición y=2 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -3.5f, 2.0f));//Posición y=2 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -3.5f, 2.0f));//Posición y=2 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=1
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -4.5f, 2.0f));//Posición y=1 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		//Z=-2
+
+		//y=6
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//cambio de escala del cubo (modificación) Ancho, grosor, profundidad
+		model = glm::translate(model, glm::vec3(0.5f, 0.5f, -2.0f));//cambio de posición del cubo (modificación) Izquierda/Derecha, Arriba/Abajo, Adelante/Atrás
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 0.5f, -2.0f));//Posición y=6 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 0.5f, -2.0f));//Posición y=6 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 0.5f, -2.0f));//Posición y=6 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 0.5f, -2.0f));//Posición y=6 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 0.5f, -2.0f));//Posición y=6 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=7
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, 1.5f, -2.0f));//Posición y=7 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 1.5f, -2.0f));//Posición y=7 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 1.5f, -2.0f));//Posición y=7 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 1.5f, -2.0f));//Posición y=7 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 1.5f, -2.0f));//Posición y=7 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 1.5f, -2.0f));//Posición y=7 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=8
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, 2.5f, -2.0f));//Posición y=8 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 2.5f, -2.0f));//Posición y=8 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 2.5f, -2.0f));//Posición y=8 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 2.5f, -2.0f));//Posición y=8 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, 2.5f, -2.0f));//Posición y=8 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 6
+		model = glm::translate(model, glm::vec3(5.5f, 2.5f, -2.0f));//Posición y=8 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=9
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, 3.5f, -2.0f));//Posición y=9 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, 3.5f, -2.0f));//Posición y=9 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, 3.5f, -2.0f));//Posición y=9 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=5
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -0.5f, -2.0f));//Posición y=5 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -0.5f, -2.0f));//Posición y=5 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -0.5f, -2.0f));//Posición y=5 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -0.5f, -2.0f));//Posición y=5 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, -0.5f, -2.0f));//Posición y=5 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=4
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -1.5f, -2.0f));//Posición y=4 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -1.5f, -2.0f));//Posición y=4 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -1.5f, -2.0f));//Posición y=4 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -1.5f, -2.0f));//Posición y=4 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 5
+		model = glm::translate(model, glm::vec3(4.5f, -1.5f, -2.0f));//Posición y=4 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=3
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -2.5f, -2.0f));//Posición y=3 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -2.5f, -2.0f));//Posición y=3 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -2.5f, -2.0f));//Posición y=3 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 4
+		model = glm::translate(model, glm::vec3(3.5f, -2.5f, -2.0f));//Posición y=3 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=2
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -3.5f, -2.0f));//Posición y=2 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 2
+		model = glm::translate(model, glm::vec3(1.5f, -3.5f, -2.0f));//Posición y=2 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 3
+		model = glm::translate(model, glm::vec3(2.5f, -3.5f, -2.0f));//Posición y=2 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=1
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 1
+		model = glm::translate(model, glm::vec3(0.5f, -4.5f, -2.0f));//Posición y=1 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		//separacion a espejo de lo anterior
+
+
+
+		//y=6
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//cambio de escala del cubo (modificación) Ancho, grosor, profundidad
+		model = glm::translate(model, glm::vec3(-0.5f, 0.5f, 0.0f));//cambio de posición del cubo (modificación) Izquierda/Derecha, Arriba/Abajo, Adelante/Atrás
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 0.5f, 0.0f));//Posición y=6 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 0.5f, 0.0f));//Posición y=6 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 0.5f, 0.0f));//Posición y=6 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 0.5f, 0.0f));//Posición y=6 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 0.5f, 0.0f));//Posición y=6 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 7
+		model = glm::translate(model, glm::vec3(-6.5f, 0.5f, 0.0f));//Posición y=6 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=7
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, 1.5f, 0.0f));//Posición y=7 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 1.5f, 0.0f));//Posición y=7 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 1.5f, 0.0f));//Posición y=7 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 1.5f, 0.0f));//Posición y=7 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 1.5f, 0.0f));//Posición y=7 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 1.5f, 0.0f));//Posición y=7 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 7
+		model = glm::translate(model, glm::vec3(-6.5f, 1.5f, 0.0f));//Posición y=7 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=8
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, 2.5f, 0.0f));//Posición y=8 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 2.5f, 0.0f));//Posición y=8 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 2.5f, 0.0f));//Posición y=8 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 2.5f, 0.0f));//Posición y=8 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 2.5f, 0.0f));//Posición y=8 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 2.5f, 0.0f));//Posición y=8 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 7
+		model = glm::translate(model, glm::vec3(-6.5f, 2.5f, 0.0f));//Posición y=8 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=9
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, 3.5f, 0.0f));//Posición y=9 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 3.5f, 0.0f));//Posición y=9 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 3.5f, 0.0f));//Posición y=9 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 3.5f, 0.0f));//Posición y=9 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 3.5f, 0.0f));//Posición y=9 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 3.5f, 0.0f));//Posición y=9 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=10
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 4.5f, 0.0f));//Posición y=10 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 4.5f, 0.0f));//Posición y=10 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 4.5f, 0.0f));//Posición y=10 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=5
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -0.5f, 0.0f));//Posición y=5 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -0.5f, 0.0f));//Posición y=5 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -0.5f, 0.0f));//Posición y=5 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -0.5f, 0.0f));//Posición y=5 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, -0.5f, 0.0f));//Posición y=5 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, -0.5f, 0.0f));//Posición y=5 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=4
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -1.5f, 0.0f));//Posición y=4 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -1.5f, 0.0f));//Posición y=4 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -1.5f, 0.0f));//Posición y=4 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -1.5f, 0.0f));//Posición y=4 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, -1.5f, 0.0f));//Posición y=4 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, -1.5f, 0.0f));//Posición y=4 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=3
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -2.5f, 0.0f));//Posición y=3 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -2.5f, 0.0f));//Posición y=3 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -2.5f, 0.0f));//Posición y=3 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -2.5f, 0.0f));//Posición y=3 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, -2.5f, 0.0f));//Posición y=3 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=2
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -3.5f, 0.0f));//Posición y=2 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -3.5f, 0.0f));//Posición y=2 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -3.5f, 0.0f));//Posición y=2 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -3.5f, 0.0f));//Posición y=2 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=1
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -4.5f, 0.0f));//Posición y=1 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -4.5f, 0.0f));//Posición y=1 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//Z=1
+
+		//y=6
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//cambio de escala del cubo (modificación) Ancho, grosor, profundidad
+		model = glm::translate(model, glm::vec3(-0.5f, 0.5f, 1.0f));//cambio de posición del cubo (modificación) Izquierda/Derecha, Arriba/Abajo, Adelante/Atrás
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 0.5f, 1.0f));//Posición y=6 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 0.5f, 1.0f));//Posición y=6 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 0.5f, 1.0f));//Posición y=6 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 0.5f, 1.0f));//Posición y=6 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 0.5f, 1.0f));//Posición y=6 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 7
+		model = glm::translate(model, glm::vec3(-6.5f, 0.5f, 1.0f));//Posición y=6 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=7
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, 1.5f, 1.0f));//Posición y=7 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 1.5f, 1.0f));//Posición y=7 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 1.5f, 1.0f));//Posición y=7 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 1.5f, 1.0f));//Posición y=7 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 1.5f, 1.0f));//Posición y=7 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 1.5f, 1.0f));//Posición y=7 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 7
+		model = glm::translate(model, glm::vec3(-6.5f, 1.5f, 1.0f));//Posición y=7 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=8
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, 2.5f, 1.0f));//Posición y=8 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 2.5f, 1.0f));//Posición y=8 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 2.5f, 1.0f));//Posición y=8 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 2.5f, 1.0f));//Posición y=8 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 2.5f, 1.0f));//Posición y=8 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 2.5f, 1.0f));//Posición y=8 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 7
+		model = glm::translate(model, glm::vec3(-6.5f, 2.5f, 1.0f));//Posición y=8 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=9
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, 3.5f, 1.0f));//Posición y=9 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 3.5f, 1.0f));//Posición y=9 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 3.5f, 1.0f));//Posición y=9 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 3.5f, 1.0f));//Posición y=9 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 3.5f, 1.0f));//Posición y=9 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 3.5f, 1.0f));//Posición y=9 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=10
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 4.5f, 1.0f));//Posición y=10 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 4.5f, 1.0f));//Posición y=10 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 4.5f, 1.0f));//Posición y=10 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=5
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -0.5f, 1.0f));//Posición y=5 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -0.5f, 1.0f));//Posición y=5 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -0.5f, 1.0f));//Posición y=5 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -0.5f, 1.0f));//Posición y=5 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, -0.5f, 1.0f));//Posición y=5 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, -0.5f, 1.0f));//Posición y=5 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=4
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -1.5f, 1.0f));//Posición y=4 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -1.5f, 1.0f));//Posición y=4 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -1.5f, 1.0f));//Posición y=4 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -1.5f, 1.0f));//Posición y=4 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, -1.5f, 1.0f));//Posición y=4 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, -1.5f, 1.0f));//Posición y=4 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=3
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -2.5f, 1.0f));//Posición y=3 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -2.5f, 1.0f));//Posición y=3 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -2.5f, 1.0f));//Posición y=3 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -2.5f, 1.0f));//Posición y=3 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, -2.5f, 1.0f));//Posición y=3 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=2
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -3.5f, 1.0f));//Posición y=2 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -3.5f, 1.0f));//Posición y=2 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -3.5f, 1.0f));//Posición y=2 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -3.5f, 1.0f));//Posición y=2 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=1
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -4.5f, 1.0f));//Posición y=1 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -4.5f, 1.0f));//Posición y=1 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//Z=0
+
+		//y=6
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//cambio de escala del cubo (modificación) Ancho, grosor, profundidad
+		model = glm::translate(model, glm::vec3(-0.5f, 0.5f, -1.0f));//cambio de posición del cubo (modificación) Izquierda/Derecha, Arriba/Abajo, Adelante/Atrás
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 0.5f, -1.0f));//Posición y=6 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 0.5f, -1.0f));//Posición y=6 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 0.5f, -1.0f));//Posición y=6 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 0.5f, -1.0f));//Posición y=6 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 0.5f, -1.0f));//Posición y=6 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 7
+		model = glm::translate(model, glm::vec3(-6.5f, 0.5f, -1.0f));//Posición y=6 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=7
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, 1.5f, -1.0f));//Posición y=7 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 1.5f, -1.0f));//Posición y=7 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 1.5f, -1.0f));//Posición y=7 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 1.5f, -1.0f));//Posición y=7 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 1.5f, -1.0f));//Posición y=7 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 1.5f, -1.0f));//Posición y=7 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 7
+		model = glm::translate(model, glm::vec3(-6.5f, 1.5f, -1.0f));//Posición y=7 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=8
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, 2.5f, -1.0f));//Posición y=8 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 2.5f, -1.0f));//Posición y=8 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 2.5f, -1.0f));//Posición y=8 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 2.5f, -1.0f));//Posición y=8 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 2.5f, -1.0f));//Posición y=8 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 2.5f, -1.0f));//Posición y=8 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 7
+		model = glm::translate(model, glm::vec3(-6.5f, 2.5f, -1.0f));//Posición y=8 de cuadro 7
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=9
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, 3.5f, -1.0f));//Posición y=9 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 3.5f, -1.0f));//Posición y=9 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 3.5f, -1.0f));//Posición y=9 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 3.5f, -1.0f));//Posición y=9 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 3.5f, -1.0f));//Posición y=9 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 3.5f, -1.0f));//Posición y=9 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=10
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 4.5f, -1.0f));//Posición y=10 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 4.5f, -1.0f));//Posición y=10 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=10 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 4.5f, -1.0f));//Posición y=10 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=5
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -0.5f, -1.0f));//Posición y=5 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -0.5f, -1.0f));//Posición y=5 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -0.5f, -1.0f));//Posición y=5 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -0.5f, -1.0f));//Posición y=5 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, -0.5f, -1.0f));//Posición y=5 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, -0.5f, -1.0f));//Posición y=5 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=4
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -1.5f, -1.0f));//Posición y=4 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -1.5f, -1.0f));//Posición y=4 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -1.5f, -1.0f));//Posición y=4 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -1.5f, -1.0f));//Posición y=4 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, -1.5f, -1.0f));//Posición y=4 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, -1.5f, -1.0f));//Posición y=4 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=3
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -2.5f, -1.0f));//Posición y=3 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -2.5f, -1.0f));//Posición y=3 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -2.5f, -1.0f));//Posición y=3 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -2.5f, -1.0f));//Posición y=3 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, -2.5f, -1.0f));//Posición y=3 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=2
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -3.5f, -1.0f));//Posición y=2 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -3.5f, -1.0f));//Posición y=2 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -3.5f, -1.0f));//Posición y=2 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -3.5f, -1.0f));//Posición y=2 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=1
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -4.5f, -1.0f));//Posición y=1 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -4.5f, -1.0f));//Posición y=1 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//Z=2
+
+		//y=6
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//cambio de escala del cubo (modificación) Ancho, grosor, profundidad
+		model = glm::translate(model, glm::vec3(-0.5f, 0.5f, 2.0f));//cambio de posición del cubo (modificación) Izquierda/Derecha, Arriba/Abajo, Adelante/Atrás
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 0.5f, 2.0f));//Posición y=6 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 0.5f, 2.0f));//Posición y=6 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 0.5f, 2.0f));//Posición y=6 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 0.5f, 2.0f));//Posición y=6 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 0.5f, 2.0f));//Posición y=6 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=7
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, 1.5f, 2.0f));//Posición y=7 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 1.5f, 2.0f));//Posición y=7 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 1.5f, 2.0f));//Posición y=7 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 1.5f, 2.0f));//Posición y=7 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 1.5f, 2.0f));//Posición y=7 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 1.5f, 2.0f));//Posición y=7 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=8
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, 2.5f, 2.0f));//Posición y=8 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 2.5f, 2.0f));//Posición y=8 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 2.5f, 2.0f));//Posición y=8 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 2.5f, 2.0f));//Posición y=8 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 2.5f, 2.0f));//Posición y=8 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 2.5f, 2.0f));//Posición y=8 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=9
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 3.5f, 2.0f));//Posición y=9 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 3.5f, 2.0f));//Posición y=9 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 3.5f, 2.0f));//Posición y=9 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=5
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -0.5f, 2.0f));//Posición y=5 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -0.5f, 2.0f));//Posición y=5 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -0.5f, 2.0f));//Posición y=5 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -0.5f, 2.0f));//Posición y=5 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, -0.5f, 2.0f));//Posición y=5 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=4
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -1.5f, 2.0f));//Posición y=4 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -1.5f, 2.0f));//Posición y=4 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -1.5f, 2.0f));//Posición y=4 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -1.5f, 2.0f));//Posición y=4 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, -1.5f, 2.0f));//Posición y=4 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=3
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -2.5f, 2.0f));//Posición y=3 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -2.5f, 2.0f));//Posición y=3 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -2.5f, 2.0f));//Posición y=3 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -2.5f, 2.0f));//Posición y=3 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=2
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -3.5f, 2.0f));//Posición y=2 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -3.5f, 2.0f));//Posición y=2 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -3.5f, 2.0f));//Posición y=2 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=1
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -4.5f, 2.0f));//Posición y=1 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		//Z=-2
+
+		//y=6
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//cambio de escala del cubo (modificación) Ancho, grosor, profundidad
+		model = glm::translate(model, glm::vec3(-0.5f, 0.5f, -2.0f));//cambio de posición del cubo (modificación) Izquierda/Derecha, Arriba/Abajo, Adelante/Atrás
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 0.5f, -2.0f));//Posición y=6 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 0.5f, -2.0f));//Posición y=6 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 0.5f, -2.0f));//Posición y=6 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 0.5f, -2.0f));//Posición y=6 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=6 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 0.5f, -2.0f));//Posición y=6 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=7
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, 1.5f, -2.0f));//Posición y=7 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 1.5f, -2.0f));//Posición y=7 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 1.5f, -2.0f));//Posición y=7 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 1.5f, -2.0f));//Posición y=7 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 1.5f, -2.0f));//Posición y=7 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=7 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 1.5f, -2.0f));//Posición y=7 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=8
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, 2.5f, -2.0f));//Posición y=8 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 2.5f, -2.0f));//Posición y=8 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 2.5f, -2.0f));//Posición y=8 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 2.5f, -2.0f));//Posición y=8 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, 2.5f, -2.0f));//Posición y=8 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=8 cuadro 6
+		model = glm::translate(model, glm::vec3(-5.5f, 2.5f, -2.0f));//Posición y=8 de cuadro 6
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=9
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, 3.5f, -2.0f));//Posición y=9 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, 3.5f, -2.0f));//Posición y=9 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=9 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, 3.5f, -2.0f));//Posición y=9 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=5
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -0.5f, -2.0f));//Posición y=5 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -0.5f, -2.0f));//Posición y=5 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -0.5f, -2.0f));//Posición y=5 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -0.5f, -2.0f));//Posición y=5 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=5 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, -0.5f, -2.0f));//Posición y=5 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=4
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -1.5f, -2.0f));//Posición y=4 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -1.5f, -2.0f));//Posición y=4 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -1.5f, -2.0f));//Posición y=4 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -1.5f, -2.0f));//Posición y=4 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=4 cuadro 5
+		model = glm::translate(model, glm::vec3(-4.5f, -1.5f, -2.0f));//Posición y=4 de cuadro 5
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=3
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -2.5f, -2.0f));//Posición y=3 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -2.5f, -2.0f));//Posición y=3 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -2.5f, -2.0f));//Posición y=3 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=3 cuadro 4
+		model = glm::translate(model, glm::vec3(-3.5f, -2.5f, -2.0f));//Posición y=3 de cuadro 4
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=2
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -3.5f, -2.0f));//Posición y=2 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 2
+		model = glm::translate(model, glm::vec3(-1.5f, -3.5f, -2.0f));//Posición y=2 cuadro 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=2 cuadro 3
+		model = glm::translate(model, glm::vec3(-2.5f, -3.5f, -2.0f));//Posición y=2 de cuadro 3
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		//y=1
+
+		model = glm::mat4(1.0f);
+		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño y=1 cuadro 1
+		model = glm::translate(model, glm::vec3(-0.5f, -4.5f, -2.0f));//Posición y=1 cuadro 1
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		//glBindVertexArray(0);
 
 		//separacion a espejo de lo anterior
 
 		model = glm::mat4(1.0f);
 		model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));//Tamaño cuadro 2 (espejo)
-		model = glm::translate(model, glm::vec3(-0.5f, 0.5f, 0.0f));//Posición de cuadro 2 (espejo)
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glDrawArrays(GL_TRIANGLES, 0, 36);
-
-		//Pata 2
-		model = glm::mat4(1.0f);
-		model = glm::scale(model, glm::vec3(0.1f, 0.6f, 0.1f));//Tamaño de la pata
-		model = glm::translate(model, glm::vec3(-2.9f, -0.6f, 1.9f));//Posición de la pata
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glDrawArrays(GL_TRIANGLES, 0, 36);
-
-		//Pata 3
-		model = glm::mat4(1.0f);
-		model = glm::scale(model, glm::vec3(0.1f, 0.6f, 0.1f));//Tamaño de la pata
-		model = glm::translate(model, glm::vec3(-2.9f, -0.6f, -1.9f));//Posición de la pata
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glDrawArrays(GL_TRIANGLES, 0, 36);
-
-		//Pata 4
-		model = glm::mat4(1.0f);
-		model = glm::scale(model, glm::vec3(0.1f, 0.6f, 0.1f));//Tamaño de la pata
-		model = glm::translate(model, glm::vec3(2.9f, -0.6f, -1.9f));//Posición de la pata
+		model = glm::translate(model, glm::vec3(0.5f, 0.5f, 0.0f));//Posición de cuadro 2 (espejo)
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 				
