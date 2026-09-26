@@ -102,6 +102,7 @@ int main( )
 	Model dog((char*)"Models/RedDog.obj");
     glm::mat4 projection = glm::perspective( camera.GetZoom( ), ( float )SCREEN_WIDTH/( float )SCREEN_HEIGHT, 0.1f, 100.0f );
     
+    Model eye((char*)"eyeball/eyeball.obj");
   
 
     // Game loop
@@ -135,6 +136,11 @@ int main( )
 		model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));
 		glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
 		dog.Draw(shader);
+
+		model = glm::translate(model, glm::vec3(-3.0f, 0.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(0.5f, 0.5f, 0.5f));
+		glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+		eye.Draw(shader);
 
         // Swap the buffers
         glfwSwapBuffers( window );
