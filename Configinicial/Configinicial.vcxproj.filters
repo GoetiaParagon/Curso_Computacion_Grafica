@@ -32,6 +32,12 @@
     <None Include="Shader\modelLoading.vs">
       <Filter>Resource Files\Shader</Filter>
     </None>
+    <None Include="Shader\background.frag">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="Shader\background.vs">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Carga de Modelos.cpp">

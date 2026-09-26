@@ -23,6 +23,8 @@
     <ClInclude Include="Shader.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Shader\background.frag" />
+    <None Include="Shader\background.vs" />
     <None Include="Shader\modelLoading.frag" />
     <None Include="Shader\modelLoading.vs" />
   </ItemGroup>

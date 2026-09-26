@@ -1,10 +1,11 @@
 //	Asencio Morales Miguel Angel
-//  Previo 6. Carga de modelos
+//  Practica 6. Carga de modelos
 //  319211454
-//  21/09/2026
+//  26/09/2026
 
 // Std. Includes
 #include <string>
+#include <iostream>
 
 // GLEW
 #include <GL/glew.h>
@@ -102,8 +103,64 @@ int main( )
 	Model dog((char*)"Models/RedDog.obj");
     glm::mat4 projection = glm::perspective( camera.GetZoom( ), ( float )SCREEN_WIDTH/( float )SCREEN_HEIGHT, 0.1f, 100.0f );
     
-    Model eye((char*)"eyeball/eyeball.obj");
+    Model eye((char*)"Models/eyeball/eyeball.obj");
+    Model leaf((char*)"Models/lilypad/waterlilyleaf.obj");
+    Model stone((char*)"Models/riverstone/river-stone-1.obj");
+    Model table((char*)"Models/woodenchair/coffee_table.obj");
   
+    // ------------------------------------------------------------------
+    // CONFIGURACIÓN DEL FONDO (BACKGROUND)
+    // ------------------------------------------------------------------
+    Shader bgShader("Shader/background.vs", "Shader/background.frag");
+
+    // Vértices para un rectángulo que cubre toda la pantalla (NDC)
+    GLfloat bgVertices[] = {
+        // Posiciones   // Coordenadas de Textura
+        -1.0f,  1.0f,   0.0f, 0.0f,
+        -1.0f, -1.0f,   0.0f, 1.0f,
+         1.0f, -1.0f,   1.0f, 1.0f,
+
+        -1.0f,  1.0f,   0.0f, 0.0f,
+         1.0f, -1.0f,   1.0f, 1.0f,
+         1.0f,  1.0f,   1.0f, 0.0f
+    };
+
+    GLuint bgVAO, bgVBO;
+    glGenVertexArrays(1, &bgVAO);
+    glGenBuffers(1, &bgVBO);
+    glBindVertexArray(bgVAO);
+    glBindBuffer(GL_ARRAY_BUFFER, bgVBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(bgVertices), &bgVertices, GL_STATIC_DRAW);
+
+    // Posición
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(GLfloat), (GLvoid*)0);
+    // Coordenadas de textura
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(GLfloat), (GLvoid*)(2 * sizeof(GLfloat)));
+    glBindVertexArray(0);
+
+    // Cargar la textura de fondo usando SOIL2
+    GLuint bgTexture;
+    glGenTextures(1, &bgTexture);
+    glBindTexture(GL_TEXTURE_2D, bgTexture);
+    // Parámetros de envoltura y filtrado
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    int width, height;
+    unsigned char* image = SOIL_load_image("images/perroenlanieve.png", &width, &height, 0, SOIL_LOAD_RGBA);
+    if (image) {
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image);
+        glGenerateMipmap(GL_TEXTURE_2D);
+        SOIL_free_image_data(image);
+    }
+    else {
+        std::cout << "Error al cargar textura: " << SOIL_last_result() << std::endl;
+    }
+    // ------------------------------------------------------------------
 
     // Game loop
     while (!glfwWindowShouldClose(window))
@@ -118,8 +175,22 @@ int main( )
         DoMovement();
 
         // Clear the colorbuffer
-        glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        // 1. DIBUJAR EL FONDO
+        // Se apaga la prueba de profundidad para que el fondo se dibuje atrás de todo
+        glDisable(GL_DEPTH_TEST);
+
+        bgShader.Use();
+        glBindVertexArray(bgVAO);
+        glBindTexture(GL_TEXTURE_2D, bgTexture);
+        glDrawArrays(GL_TRIANGLES, 0, 6);
+        glBindVertexArray(0);
+
+        // 2. DIBUJAR LOS MODELOS 3D
+        // Se enciende la prueba de profundidad nuevamente para los modelos 3D
+        glEnable(GL_DEPTH_TEST);
 
         shader.Use();
 
@@ -137,10 +208,33 @@ int main( )
 		glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
 		dog.Draw(shader);
 
-		model = glm::translate(model, glm::vec3(-3.0f, 0.0f, 0.0f));
-		model = glm::scale(model, glm::vec3(0.5f, 0.5f, 0.5f));
-		glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-		eye.Draw(shader);
+        // 1. Dibujar Eyeball (Izquierda)
+        glm::mat4 model_eye(1.0f); // Matriz de identidad fresca para cada objeto
+        model_eye = glm::translate(model_eye, glm::vec3(-4.5f, 0.0f, 0.0f));
+        model_eye = glm::scale(model_eye, glm::vec3(0.5f, 0.5f, 0.5f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model_eye));
+        eye.Draw(shader);
+
+        // 2. Dibujar Waterlily Leaf (Centro-Izquierda)
+        glm::mat4 model_leaf(1.0f);
+        model_leaf = glm::translate(model_leaf, glm::vec3(-1.5f, 0.0f, 0.0f));
+        model_leaf = glm::scale(model_leaf, glm::vec3(0.05f, 0.05f, 0.05f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model_leaf));
+        leaf.Draw(shader);
+
+        // 3. Dibujar River Stone (Centro-Derecha)
+        glm::mat4 model_stone(1.0f);
+        model_stone = glm::translate(model_stone, glm::vec3(1.5f, 0.0f, 0.0f));
+        model_stone = glm::scale(model_stone, glm::vec3(1.0f, 1.0f, 1.0f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model_stone));
+        stone.Draw(shader);
+
+        // 4. Dibujar Coffee Table (Derecha)
+        glm::mat4 model_table(1.0f);
+        model_table = glm::translate(model_table, glm::vec3(4.5f, -1.0f, 0.0f)); // Ligeramente más abajo
+        model_table = glm::scale(model_table, glm::vec3(0.2f, 0.2f, 0.2f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model_table));
+        table.Draw(shader);
 
         // Swap the buffers
         glfwSwapBuffers( window );
