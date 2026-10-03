@@ -1,7 +1,7 @@
 //	Asencio Morales Miguel Angel
 //  Práctica 7. Texturizado
 //  319211454
-//  29/09/2026
+//  03/010/2026
 
 #include <iostream>
 #include <cmath>
@@ -125,23 +125,23 @@ int main()
 		-0.5f, -0.5f, -0.5f,    1.0f, 1.0f, 1.0f,   0.25f, 0.0f, // 10
 		-0.5f, -0.5f,  0.5f,    1.0f, 1.0f, 1.0f,   0.5f, 0.0f, // 11
 
-		// Derecha (Cara 2 de la imagen) 
+		// Derecha (Cara 2 de la imagen) Completado
 		 0.5f,  0.5f,  0.5f,    1.0f, 1.0f, 1.0f,   0.5f, 1.0f, // 12
 		 0.5f,  0.5f, -0.5f,    1.0f, 1.0f, 1.0f,   0.75f, 1.0f, // 13
 		 0.5f, -0.5f, -0.5f,    1.0f, 1.0f, 1.0f,   0.75f, 0.75f, // 14
 		 0.5f, -0.5f,  0.5f,    1.0f, 1.0f, 1.0f,   0.5f, 0.75f, // 15
 
-		 // Abajo (Cara 5 de la imagen)
-		 -0.5f, -0.5f, -0.5f,    1.0f, 1.0f, 1.0f,   1.5f, 1.0f, // 16
+		 // Abajo (Cara 5 de la imagen) Completado
+		 -0.5f, -0.5f, -0.5f,    1.0f, 1.0f, 1.0f,   1.25f, 1.0f, // 16
 		  0.5f, -0.5f, -0.5f,    1.0f, 1.0f, 1.0f,   1.0f, 1.0f, // 17
 		  0.5f, -0.5f,  0.5f,    1.0f, 1.0f, 1.0f,   1.0f, 0.75f, // 18
-		 -0.5f, -0.5f,  0.5f,    1.0f, 1.0f, 1.0f,   1.5f, 0.75f, // 19
+		 -0.5f, -0.5f,  0.5f,    1.0f, 1.0f, 1.0f,   1.25f, 0.75f, // 19
 
-		 // Arriba (Cara 3 de la imagen)
-		 -0.5f,  0.5f, -0.5f,    1.0f, 1.0f, 1.0f,   0.3f, 0.75f, // 20
-		  0.5f,  0.5f, -0.5f,    1.0f, 1.0f, 1.0f,   0.6f, 0.75f, // 21
-		  0.5f,  0.5f,  0.5f,    1.0f, 1.0f, 1.0f,   0.6f, 0.50f, // 22
-		 -0.5f,  0.5f,  0.5f,    1.0f, 1.0f, 1.0f,   0.3f, 0.50f  // 23
+		 // Arriba (Cara 3 de la imagen) Completado
+		 -0.5f,  0.5f, -0.5f,    1.0f, 1.0f, 1.0f,   0.25f, 0.75f, // 20
+		  0.5f,  0.5f, -0.5f,    1.0f, 1.0f, 1.0f,   0.5f, 0.75f, // 21
+		  0.5f,  0.5f,  0.5f,    1.0f, 1.0f, 1.0f,   0.5f, 0.50f, // 22
+		 -0.5f,  0.5f,  0.5f,    1.0f, 1.0f, 1.0f,   0.25f, 0.50f  // 23
 	};
 
 	GLuint indices[] =
