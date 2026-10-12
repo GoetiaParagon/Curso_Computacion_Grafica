@@ -40,7 +40,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MaterialesEIlustracion.cpp">
+    <ClCompile Include="fuentesDeLuz.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
