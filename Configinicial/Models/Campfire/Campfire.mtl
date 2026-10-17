@@ -1,0 +1,13 @@
+newmtl CampfireSG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+Ns 100.00
+
+# Enlaces a tus texturas (Asegúrate de que los archivos estén en la misma carpeta que el .obj y el .mtl)
+map_Kd Campfire_MAT_BaseColor_00.jpg
+map_Ns Campfire_MAT_Roughness.jpg
+map_Bump Campfire_MAT_Normal_DX.jpg
