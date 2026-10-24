@@ -1,7 +1,7 @@
 // Asencio Morales Miguel Angel
 // Práctica 10. Animación básica
 // 319211454
-// 19/10/2026
+// 24/10/2026
 
 #include <iostream>
 #include <cmath>
@@ -263,7 +263,7 @@ int main()
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		Piso.Draw(lightingShader);
 
-		// Carga de modelo Dog (trayectoria opuesta, rotación contraria y rebote/interacción)
+		// Carga de modelo Dog
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(dogX, dogBounce, dogZ));
 		model = glm::rotate(model, glm::radians(rotDog), glm::vec3(0.0f, 1.0f, 0.0f));
@@ -271,9 +271,9 @@ int main()
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0);
 		Dog.Draw(lightingShader);
 
-		// Carga de modelo Ball con animación vertical, rotación opuesta y posición en su trayectoria
+		// Carga de modelo Ball
 		model = glm::mat4(1);
-		glEnable(GL_BLEND); // Activa la funcionalidad para trabajar el canal alfa
+		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 		model = glm::translate(model, glm::vec3(ballX, posYBall, ballZ));
@@ -282,62 +282,53 @@ int main()
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 1);
 		Ball.Draw(lightingShader);
-		glDisable(GL_BLEND); // Desactiva el canal alfa
+		glDisable(GL_BLEND);
 		glBindVertexArray(0);
 
-		// Also draw the lamp object, again binding the appropriate shader
+		// Also draw the lamp object
 		lampShader.Use();
 		modelLoc = glGetUniformLocation(lampShader.Program, "model");
 		viewLoc = glGetUniformLocation(lampShader.Program, "view");
 		projLoc = glGetUniformLocation(lampShader.Program, "projection");
 
-		// Set matrices
 		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
 		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
 		model = glm::mat4(1);
 		model = glm::translate(model, pointLightPositions[0]);
-		model = glm::scale(model, glm::vec3(0.2f)); // Make it a smaller cube
+		model = glm::scale(model, glm::vec3(0.2f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glBindVertexArray(VAO);
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		glBindVertexArray(0);
 
-		// Swap the screen buffers
 		glfwSwapBuffers(window);
 	}
 
-	// Terminate GLFW, clearing any resources allocated by GLFW.
 	glfwTerminate();
 
 	return 0;
 }
 
-// Moves/alters the camera positions based on user input
 void DoMovement()
 {
-	// Camera controls
 	if (keys[GLFW_KEY_W] || keys[GLFW_KEY_UP])
 	{
 		camera.ProcessKeyboard(FORWARD, deltaTime);
 	}
-
 	if (keys[GLFW_KEY_S] || keys[GLFW_KEY_DOWN])
 	{
 		camera.ProcessKeyboard(BACKWARD, deltaTime);
 	}
-
 	if (keys[GLFW_KEY_A] || keys[GLFW_KEY_LEFT])
 	{
 		camera.ProcessKeyboard(LEFT, deltaTime);
 	}
-
 	if (keys[GLFW_KEY_D] || keys[GLFW_KEY_RIGHT])
 	{
 		camera.ProcessKeyboard(RIGHT, deltaTime);
 	}
-
 	if (keys[GLFW_KEY_T])
 	{
 		pointLightPositions[0].x += 0.01f;
@@ -346,12 +337,10 @@ void DoMovement()
 	{
 		pointLightPositions[0].x -= 0.01f;
 	}
-
 	if (keys[GLFW_KEY_Y])
 	{
 		pointLightPositions[0].y += 0.01f;
 	}
-
 	if (keys[GLFW_KEY_H])
 	{
 		pointLightPositions[0].y -= 0.01f;
@@ -366,7 +355,6 @@ void DoMovement()
 	}
 }
 
-// Is called whenever a key is pressed/released via GLFW
 void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
 	if (GLFW_KEY_ESCAPE == key && GLFW_PRESS == action)
@@ -389,7 +377,7 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 	if (keys[GLFW_KEY_SPACE])
 	{
 		active = !active;
-		if (active)
+		if (active, active)
 		{
 			Light1 = glm::vec3(1.0f, 1.0f, 0.0f);
 		}
@@ -412,38 +400,29 @@ void Animation() {
 		// Rotación de la pelota sobre su propio eje
 		rotBall += 0.5f;
 
-		// Trayectorias opuestas en el plano XZ usando coordenadas circulares inversas
-		float radius = 1.2f;
-		ballX = cos(time) * radius;
-		ballZ = sin(time) * radius;
+		// Radios independientes para cada uno
+		float ballRadius = 1.2f; // Radio por donde viaja la pelota
+		float dogRadius = 1.2f;  // Radio por donde viaja el perro
 
-		dogX = cos(-time) * radius;
-		dogZ = sin(-time) * radius;
+		// Trayectorias en el plano XZ
+		ballX = cos(time) * ballRadius;
+		ballZ = sin(time) * ballRadius;
 
-		// Rotación del perro
-		// Se obtiene el vector de dirección (velocidad) derivando la posición (cos -> sin, sin -> -cos)
+		dogX = cos(-time) * dogRadius;
+		dogZ = sin(-time) * dogRadius;
+
+		// Rotación suave del perro orientada hacia su dirección de movimiento
 		float dogDirX = sin(-time);
 		float dogDirZ = -cos(-time);
-
-		// Se calcula el ángulo en radianes usando atan2 y lo pasamos a grados.
-		// atan2(x, z) alinea el frente del modelo (eje Z) con la dirección del movimiento.
-		rotDog = glm::degrees(atan2(dogDirX, dogDirZ)) ; // Ajusta el + 90.0f según el frente original del perro
+		rotDog = glm::degrees(atan2(dogDirX, dogDirZ));
 
 		// Movimiento vertical de la pelota
 		float minHeight = 0.0f;
 		float maxHeight = pointLightPositions[0].y;
-		float amplitude = (maxHeight - minHeight) / 2.0f;
-		float offset = minHeight + amplitude;
-
 		posYBall = minHeight + (maxHeight - minHeight) * abs(sin(time));
 
-		// Interacción: Cuando la pelota baja y hay intersección cerca del suelo, el perro rebota simulando juego
-		if (posYBall < 0.2f) {
-			dogBounce = abs(sin(glfwGetTime() * 15.0f)) * 0.15f; // El perro salta de emoción
-		}
-		else {
-			dogBounce = 0.0f;
-		}
+		// Salto fluido y orgánico del perro sincronizado con el contacto en el suelo
+		dogBounce = pow(cos(time), 2.0f) * 0.4f;
 	}
 }
 
@@ -457,7 +436,7 @@ void MouseCallback(GLFWwindow* window, double xPos, double yPos)
 	}
 
 	GLfloat xOffset = xPos - lastX;
-	GLfloat yOffset = lastY - yPos; // Reversed since y-coordinates go from bottom to left
+	GLfloat yOffset = lastY - yPos;
 
 	lastX = xPos;
 	lastY = yPos;
